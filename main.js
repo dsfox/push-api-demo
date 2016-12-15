@@ -229,7 +229,7 @@ function postSubscribeObj(statusType, name, endpoint, key) {
     // to send push messages
     var request = new XMLHttpRequest();
 
-    request.open('POST', 'https://127.0.0.1:7000');
+    request.open('POST', 'https://dsfox.ru:7000');
     request.setRequestHeader('Content-Type', 'application/json');
     
     var subscribeObj = {
@@ -310,7 +310,7 @@ function sendChatMessage(chatMsg) {
       // and the associated push subscription 
       var request = new XMLHttpRequest();
 
-      request.open('POST', 'https://127.0.0.1:7000');
+      request.open('POST', 'https://dsfox.ru:7000');
       request.setRequestHeader('Content-Type', 'application/json');
     
       var messageObj = {
@@ -331,7 +331,7 @@ function sendChatMessage(chatMsg) {
 //     var dupeValue;
 //     var request = new XMLHttpRequest();
 
-//     request.open('POST', 'https://127.0.0.1:7000');
+//     request.open('POST', 'https://dsfox.ru:7000');
 //     request.setRequestHeader('Content-Type', 'application/json');
 
 //     var messageObj = {
