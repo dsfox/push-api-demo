@@ -121,7 +121,7 @@ app.post('/', function (request, response) {
 response.writeHead(200, {
   'Content-Security-Policy':
           'default-src \'none\';' +
-          ' connect-src \'self\' 146.185.169.242;' +
+          ' connect-src \'self\' dsfox.ru;' +
           ' child-src \'self\';' +
           ' font-src \'self\';' +
           ' script-src \'self\';' +
