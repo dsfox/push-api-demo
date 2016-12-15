@@ -119,21 +119,17 @@ app.post('/', function (request, response) {
     });
 
 response.writeHead(200, {
-  "Content-Type": "application/json",
-  "Access-Control-Allow-Origin": "*", 
-  "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin, Access-Control-Allow-Headers"});
-
-response.writeHead(200, {
-        'Content-Type': contentType,
-        'Content-Security-Policy':
+  'Content-Security-Policy':
           'default-src \'none\';' +
           ' connect-src \'self\' 146.185.169.242;' +
           ' child-src \'self\';' +
           ' font-src \'self\';' +
           ' script-src \'self\';' +
           ' style-src \'unsafe-inline\';',
-        'X-Content-Type-Options': 'nosniff'
-      });
+        'X-Content-Type-Options': 'nosniff',
+  "Content-Type": "application/json",
+  "Access-Control-Allow-Origin": "*", 
+  "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Origin, Access-Control-Allow-Headers"});
 
 response.write(dupe);
 
